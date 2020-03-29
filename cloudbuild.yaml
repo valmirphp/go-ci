@@ -11,6 +11,5 @@ steps:
 
     - id: "Build App Calc"
       name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '--tag=gcr.io/$PROJECT_ID/calc', './src/']
-
+      args: ['build', '--tag=gcr.io/$PROJECT_ID/calc', '.']      
 images: ['gcr.io/$PROJECT_ID/calc']
