@@ -6,7 +6,7 @@ steps:
 
     - id: "Run test GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['test', 'calc']
+      args: ['test']
       env: ['PROJECT_ROOT=calc']
 
     - id: "Build App Calc"
