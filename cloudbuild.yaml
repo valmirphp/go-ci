@@ -11,7 +11,7 @@ steps:
       
     - id: "Build GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['build', './src/']
+      args: ['build', './src/main.go']
       env: ['PROJECT_ROOT=calc']
 
     - id: "Build App Calc"
