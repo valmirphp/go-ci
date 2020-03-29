@@ -7,4 +7,4 @@ ADD . .
 
 RUN ls ./
 
-ENTRYPOINT ["/calc"]
+# ENTRYPOINT ["/calc"]
