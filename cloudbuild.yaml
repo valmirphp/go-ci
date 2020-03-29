@@ -1,18 +1,18 @@
 steps:    
     - id: "Install GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['install', './src/']
-      env: ['PROJECT_ROOT=calc']
+      args: ['install', 'calc']
+      env: ['GOPATH=.']
 
     - id: "Run test GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['test', './src/']
-      env: ['PROJECT_ROOT=calc']
+      args: ['test', 'hello']
+      env: ['GOPATH=.']
       
-    - id: "Build GO Lang"
-      name: "gcr.io/cloud-builders/go"
-      args: ['build', './src/main.go']
-      env: ['PROJECT_ROOT=calc']
+    # - id: "Build GO Lang"
+    #   name: "gcr.io/cloud-builders/go"
+    #   args: ['build', './src/main.go']
+    #   env: ['PROJECT_ROOT=calc']
 
     - id: "Build App Calc"
       name: 'gcr.io/cloud-builders/docker'
