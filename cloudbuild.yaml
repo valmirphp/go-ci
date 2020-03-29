@@ -1,7 +1,7 @@
 steps:    
     - id: "Install GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['install', './src']
+      args: ['install', './src/']
       env: ['PROJECT_ROOT=calc']
 
     - id: "Run test GO Lang"
