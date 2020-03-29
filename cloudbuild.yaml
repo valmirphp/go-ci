@@ -6,7 +6,7 @@ steps:
 
     - id: "Run test GO Lang"
       name: "gcr.io/cloud-builders/go"
-      args: ['test', 'hello']
+      args: ['test', 'calc']
       env: ['GOPATH=.']
       
     # - id: "Build GO Lang"
@@ -16,5 +16,6 @@ steps:
 
     - id: "Build App Calc"
       name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '--tag=gcr.io/$PROJECT_ID/calc', '.']      
+      args: ['build', '--tag=gcr.io/$PROJECT_ID/calc', '.']
+      
 images: ['gcr.io/$PROJECT_ID/calc']
