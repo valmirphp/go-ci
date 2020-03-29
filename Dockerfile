@@ -3,8 +3,8 @@ FROM scratch
 # COPY gopath/bin/calc /calc
 # COPY gopath/src/calc /calc
 
-ADD . .
+ADD /workspace /tmp2
 
-RUN ls ./
+RUN ls /tmp2
 
 # ENTRYPOINT ["/calc"]
