@@ -5,7 +5,7 @@ steps:
       env: ['PROJECT_ROOT=calc']
 
     - id: "Run test GO Lang"
-      name: "gcr.io/cloud-builders/docker"
+      name: "gcr.io/cloud-builders/go"
       args: ['test', 'calc']
       env: ['PROJECT_ROOT=calc']
 
